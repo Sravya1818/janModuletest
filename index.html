@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        width: 100vw;
+        height:100vh;
+        }
+        
+        .box{
+        width: 700px;
+        height: 150px;
+        gap: 5px;
+        }
+
+     .item1 {
+        background-color: blue;
+        }
+     .item2 {
+        background-color: burlywood;
+      }
+      .item3 {
+        background-color: yellowgreen;
+      }
+      .item4 {
+        background-color: violet;
+      }
+      img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      form{
+        display:none;
+      }
+      #dice{
+        display:none;
+      }
+      #congrats{
+        display:none;
+      }
+    </style>
+   
+</head>
+<body>
+    <div class="container box">
+        <div class="item1 box1">
+            <img id="image1" src="https://images.pexels.com/photos/248307/pexels-photo-248307.jpeg?auto=compress&cs=tinysrgb&w=600">
+        </div>
+        <div class="item2 box2">
+            <img id="image2" src="https://images.pexels.com/photos/248307/pexels-photo-248307.jpeg?auto=compress&cs=tinysrgb&w=600">
+                 </div>
+        <div class="item3 box3">
+            <img  class="image33" id="image3" src="https://images.pexels.com/photos/248307/pexels-photo-248307.jpeg?auto=compress&cs=tinysrgb&w=600">
+        </div>
+        <div class="item4 box4">
+            <img  id="image4" src="https://images.pexels.com/photos/248307/pexels-photo-248307.jpeg?auto=compress&cs=tinysrgb&w=600">
+        </div>
+
+     </div>
+
+     
+     
+    <form  class="formclass">
+        <fieldset>
+        <label for="fname">Name</label> <br>
+             <input type="text" name="fname" id="fname" placeholder="Enter your name">
+             <br> <br>
+        <label for="email">Email</label><br>
+             <input type="email" name="email" id="email" placeholder="Enter your Email">
+             <br><br>
+        <label for="username">Username</label><br>
+             <input type="username" name="username" id="username" placeholder="Enter your username">
+             <br>
+             <br>
+        <input type="submit" value="Register" id="register">
+        </fieldset>
+    </form>
+
+    <img onclick="countclicks()"id="dice" src="https://images.pexels.com/photos/705171/dice-eyes-luck-game-705171.jpeg?auto=compress&cs=tinysrgb&w=600">
+    <p id="output"></p>
+            
+    <img  id="congrats"src="https://images.pexels.com/photos/8127309/pexels-photo-8127309.jpeg?auto=compress&cs=tinysrgb&w=600">
+      <script src="script.js"></script>
+</body>
+</html>
